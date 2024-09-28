@@ -16,7 +16,7 @@ from typing import Dict, Generator, Optional, Tuple, Union
 from simple_ddl_parser import DDLParser
 
 PREAMBLE = """/*
- Bixi Database Transfer Tool
+ Yudao Database Transfer Tool
 
  Source Server Type    : MySQL
 
@@ -45,8 +45,7 @@ def load_and_clean(sql_file: str) -> str:
         ("b'1'", "'1'"),
     )
 
-    with open(sql_file, 'r', encoding='utf-8') as file:
-        content = file.read()
+    content = open(sql_file).read()
     for replace_pair in REPLACE_PAIR_LIST:
         content = content.replace(*replace_pair)
     content = re.sub(r"ENGINE.*COMMENT", "COMMENT", content)
