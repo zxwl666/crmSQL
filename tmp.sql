@@ -1,11 +1,11 @@
 /*
- Bixi Database Transfer Tool
+ Yudao Database Transfer Tool
 
  Source Server Type    : MySQL
 
  Target Server Type    : PostgreSQL
 
- Date: 2024-09-28 13:47:54
+ Date: 2024-09-28 14:20:08
 */
 
 
